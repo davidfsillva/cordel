@@ -1,62 +1,98 @@
 @charset "UTF-8";
 
 * {
-    margin: 0px;
-    padding: 0px;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
-html, body {
+
+body {
     min-height: 100vh;
-    background-color: #D8B4E2;
+    text-align: center;
+    font-family: Georgia, "Times New Roman", serif;
+    background-color: #f5f5f5;
 }
 
 header {
     background-color: #55286F;
     color: white;
     text-align: center;
+    border-radius: 10px;
+    margin: 20px;
 }
 
 header h1 {
-    padding-top: 40px;
+    padding: 40px 0;
     font-variant: small-caps;
-    padding-bottom: 40px;
-    
+    letter-spacing: 1px;
 }
 
-header a, footer a {
+header a,
+footer a {
     color: white;
     text-decoration: none;
-    font-weight: bolder;
+    font-weight: bold;
 }
 
-header a:hover, footer a:hover {
+header a:hover,
+footer a:hover {
     text-decoration: underline;
 }
-section{
-    padding-top: 10vh;
-    padding-bottom: 10vh;
-    line-height: 1.5em;
-    padding-left: 30px;
+
+h2 {
+    margin: 30px 0;
+    font-size: 2em;
 }
 
-section.normal{
+section {
+    padding: 40px 20px;
+    line-height: 1.8em;
+}
+
+section.normal {
     background-color: white;
     color: black;
-}
-
-section.imagem{
-    background-color: #BC96E6;
-    color: white;
-}
-
-section.imagem > p{
-    background-color: #D8B4E2;
+    margin: 20px;
     border-radius: 10px;
-    width: 200px;
 }
 
-footer{
+section.imagem {
+    color: white;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 60vh;
+    margin: 40px 20px;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: inset 6px 6px 13px rgba(0,0,0,0.5);
+}
+
+section.imagem > p {
+    background-color: rgba(216, 180, 226, 0.7);
+    border-radius: 10px;
+    padding: 25px;
+    max-width: 420px;
+    line-height: 1.8em;
+    font-size: 1.05em;
+}
+
+section#img01 {
+    background-image: url('imagens/01.jpg');
+}
+
+section#img02 {
+    background-image: url('imagens/02.jpg');
+}
+
+footer {
     background-color: #55286F;
     color: white;
     text-align: center;
-    padding: 10px;
+    padding: 15px;
+    border-radius: 10px;
+    margin: 20px;
+    font-size: 0.9em;
 }
